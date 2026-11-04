@@ -5,13 +5,13 @@
 <rect x="20" y="60" width="150" height="90" rx="6"/><rect x="235" y="60" width="150" height="90" rx="6"/>
 <rect x="450" y="60" width="140" height="90" rx="6"/><rect x="655" y="60" width="130" height="90" rx="6"/></g>
 <g fill="#0b0c0e" text-anchor="middle">
-<text x="95" y="100" font-weight="700">Dein Original</text><text x="95" y="122">C2KNXS.UPD 1.44</text>
+<text x="95" y="100" font-weight="700">Your original</text><text x="95" y="122">C2KNXS.UPD 1.44</text>
 <text x="310" y="100" font-weight="700">StemDock</text><text x="310" y="122">FIRMWARE</text>
-<text x="520" y="100" font-weight="700">USB-Stick</text><text x="520" y="122">FAT32</text><text x="520" y="142" font-size="13">C2KNXSM.UPD</text>
-<text x="720" y="100" font-weight="700">CDJ-2000NXS</text><text x="720" y="122" font-size="13">USB + RELOOP/EXIT</text><text x="720" y="140" font-size="13">beim Einschalten</text></g>
+<text x="520" y="100" font-weight="700">USB stick</text><text x="520" y="122">FAT32</text><text x="520" y="142" font-size="13">C2KNXSM.UPD</text>
+<text x="720" y="100" font-weight="700">CDJ-2000NXS</text><text x="720" y="122" font-size="13">USB + RELOOP/EXIT</text><text x="720" y="140" font-size="13">when switching on</text></g>
 <g stroke="#0b0c0e" stroke-width="2" fill="none" marker-end="url(#a)"><path d="M172,105 H232"/><path d="M387,105 H447"/><path d="M592,105 H652"/></g>
 <g fill="#d7263d"><circle cx="205" cy="45" r="14"/><circle cx="420" cy="45" r="14"/><circle cx="625" cy="45" r="14"/></g>
 <g fill="#fff" font-weight="700" text-anchor="middle"><text x="205" y="51">1</text><text x="420" y="51">2</text><text x="625" y="51">3</text></g>
-<g fill="#0b0c0e" text-anchor="middle" font-size="13"><text x="205" y="180">Original wählen</text><text x="420" y="180">Datei auf den Stick kopieren</text><text x="625" y="180">Stick einstecken</text></g>
-<text x="520" y="205" text-anchor="middle" font-size="13" fill="#4d5156">Kann derselbe Stick wie dein rekordbox-Stick sein.</text>
+<g fill="#0b0c0e" text-anchor="middle" font-size="13"><text x="205" y="180">Choose original</text><text x="420" y="180">Copy file to the stick</text><text x="625" y="180">Plug in the stick</text></g>
+<text x="520" y="205" text-anchor="middle" font-size="13" fill="#4d5156">Can be the same stick as your rekordbox stick.</text>
 </svg>

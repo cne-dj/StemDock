@@ -1,4 +1,4 @@
-# Third-party components / Fremde Bestandteile
+# Third-party components
 
 StemDock itself: see LICENSE.txt.
 
@@ -9,7 +9,7 @@ StemDock itself: see LICENSE.txt.
 | Inter | UI font, shipped | SIL Open Font License 1.1 (ui/fonts/OFL-inter.txt) |
 | IBM Plex Mono | UI font, shipped | SIL Open Font License 1.1 (ui/fonts/OFL-ibmplexmono.txt) |
 
-## Thanks / Danke
+## Thanks
 
 This modification was only possible thanks to these emulator projects (not part of StemDock, no code shipped):
 
@@ -18,4 +18,4 @@ This modification was only possible thanks to these emulator projects (not part 
 
 Pioneer DJ and AlphaTheta are trademarks of their respective owners. No original firmware is included.
 
-Homepage / Kontakt: http://cne-dj.com , http://cne-lab.de
+Homepage / contact: http://cne-dj.com , http://cne-lab.de

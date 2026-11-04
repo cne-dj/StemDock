@@ -1,14 +1,14 @@
 # Changelog
 
 ## 0.9 (build 8) — 2026-11-04
-- Optionale Pruefung auf neue Versionen ueber die GitHub-Releases (Betas zaehlen mit)
-- MANUAL-Reiter entfernt: Kurzhilfe (?) auf den Karten, Link "Anleitung auf GitHub"
-- Flash- und Rueckweg-Hinweise in der Firmware-Hilfe
-- README mit Screenshots und Schemata
+- Optional check for new versions via GitHub releases (betas count)
+- MANUAL tab removed: short help (?) on the cards, link "Manual on GitHub"
+- Flash and way-back notes in the firmware help
+- README with screenshots and flow diagrams
 
 ## 0.8 (build 7) — 2026-11-04
-- Immer 4 Layer, Ausrichtung beim Schreiben, Einstellungen und Texte ueberarbeitet
-- Optionale Pruefung auf neue Versionen (Einstellungen > Info, Standard aus); BETA-Hinweis
+- Always 4 layers, alignment when writing, settings and texts revised
+- Optional check for new versions (Settings > Info, default off); BETA notice
 
 ## 0.7 (build 6) — 2026-11-04
 - writes STEMS/idmap.bin automatically after every stick write (clear error if it fails)

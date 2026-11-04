@@ -2,159 +2,138 @@
 
 # StemDock 0.9 (BETA)
 
-**Deutsch** · [English below](#english)
+Free helper tool for the **Pioneer CDJ-2000NXS**.
 
-Kostenloses Hilfsprogramm für den **Pioneer CDJ-2000NXS**.
+- Builds an **update file** with the stem mod from **your own** original firmware 1.44.
+- Prepares your **USB stick**: **4 layers** per track (Vocal, Melody, Bass, Drums).
+- Runs **locally**, nothing is uploaded.
 
-- Erstellt aus **deiner eigenen** Original-Firmware 1.44 eine **Update-Datei** mit der Stem-Mod.
-- Bereitet deinen **USB-Stick** vor: **4 Layer** pro Titel (Vocal, Melody, Bass, Drums).
-- Läuft **lokal**, nichts wird hochgeladen.
+> **BETA, at your own risk:** flashing can **damage** the player. Not everything is tested on real hardware. **Keep your original 1.44 file.**
 
-> **BETA, auf eigenes Risiko:** Flashen kann den Player **beschädigen**. Nicht alles ist auf echter Hardware erprobt. **Originaldatei 1.44 aufheben.**
+## What you need
 
-## Das brauchst du
+- **Mac** with Apple chip (Windows untested)
+- Your **original 1.44 file** (`C2KNXS.UPD` or `C2KNXSM.UPD`) from Pioneer
+- **FAT32** USB stick
+- **rekordbox** export (folder `PIONEER/rekordbox`)
+- Only for separating: **Python 3.10 to 3.12** and internet (once)
 
-- **Mac** mit Apple-Chip (Windows ungetestet)
-- Deine **Originaldatei 1.44** (`C2KNXS.UPD` oder `C2KNXSM.UPD`) von Pioneer
-- **FAT32**-USB-Stick
-- **rekordbox**-Export (Ordner `PIONEER/rekordbox`)
-- Nur zum Trennen: **Python 3.10 bis 3.12** und Internet (einmalig)
+## Install (macOS)
 
-## Installieren (macOS)
+- Put `StemDock.app` into **Applications**.
+- The app is **not notarized**: first start via **right-click > Open > Open**.
+- Alternatively: **System Settings > Privacy & Security > Open Anyway**.
+- Confirm the **notice** on first start.
 
-- `StemDock.app` in den Ordner **Programme** legen.
-- Die App ist **nicht notarisiert**: erster Start per **Rechtsklick > Öffnen > Öffnen**.
-- Alternativ: **Systemeinstellungen > Datenschutz & Sicherheit > Dennoch öffnen**.
-- Beim ersten Start den **Hinweis** bestätigen.
+The **?** on every card shows a short help.
 
-Das **?** auf jeder Karte zeigt eine Kurzhilfe.
+## 1. Firmware: create the update file
 
-## 1. Firmware: Update-Datei erstellen
+![Firmware flow](docs/flow-firmware.svg)
 
-![Ablauf Firmware](docs/flow-firmware.svg)
+![Choose original](docs/screenshots/firmware-1-pick.png)
 
-![Original wählen](docs/screenshots/firmware-1-pick.png)
+1. **Choose Original**: your 1.44 file.
+2. **Check result**: StemDock rejects wrong or already modified files.
+3. Tick the box, **Create Update File** (about 15 s).
 
-1. **Original wählen**: deine Datei 1.44.
-2. **Prüfergebnis**: StemDock lehnt falsche oder schon veränderte Dateien ab.
-3. Haken setzen, **Update-Datei erstellen** (ca. 15 s).
+![Short help](docs/screenshots/firmware-2-help.png)
 
-![Kurzhilfe](docs/screenshots/firmware-2-help.png)
+1. **?** opens the short help (also by keyboard).
+2. It contains **flashing** and **way back**.
 
-1. **?** öffnet die Kurzhilfe (auch per Tastatur).
-2. Dort stehen **Flashen** und **Rückweg**.
+![Done](docs/screenshots/firmware-3-done.png)
 
-![Fertig](docs/screenshots/firmware-3-done.png)
+1. The file is named **`C2KNXSM.UPD`**.
+2. The flashing steps are shown in the app.
 
-1. Datei heißt **`C2KNXSM.UPD`**.
-2. Die Schritte zum Flashen stehen in der App.
+**Flashing:**
 
-**Flashen:**
-
-- **Reihenfolge:** **USB + RELOOP/EXIT** beim Einschalten des CDJ-2000NXS gedrückt halten
-- Meldung **"Connect the USB storage device"** abwarten, **dann** den Stick einstecken
-- Warten, **nicht ausschalten**, Strom darf nicht ausfallen
-- **Stick:** leer oder der **rekordbox-Stick**, immer **FAT32**; Datei ins Hauptverzeichnis
-- **Zurück zur Original-Firmware inkl. GUI:** **USB STOP + USB + RELOOP/EXIT** beim Einschalten gedrückt halten.
-
-**Rückweg:**
-
-- Die Mod setzt die Versionsnummer von **1.44 auf 1.43**.
-- So kannst du **jederzeit zur Original-Firmware 1.44 zurückwechseln**: gleiche Methode, deine Originaldatei.
-
-## 2. Titel in 4 Layer trennen (PREP)
-
-![Ablauf Trennen](docs/flow-stems.svg)
-
-![Stick und Titel](docs/screenshots/stems-1-stick.png)
-
-1. **Stick oder Export wählen**.
-2. **Playlist** wählen.
-3. **Titel** ankreuzen (bereits getrennte sind markiert).
-
-![Methode](docs/screenshots/stems-2-method.png)
-
-1. **Mit StemDock trennen**: braucht das Zusatzpaket (siehe Einstellungen).
-2. **Eigene Layer-Dateien**: 4 Dateien pro Titel, StemDock ordnet zu und prüft.
-
-![Trennen](docs/screenshots/stems-3-separate.png)
-
-1. **Titel trennen**: nacheinander, **Abbrechen** jederzeit.
-
-![Schreiben](docs/screenshots/stems-4-write.png)
-
-1. **Auf den Stick schreiben**: Musik und Export bleiben **unverändert**, `exstem.pdb` wird als `.bak` gesichert.
-
-- Titel mit Layer liegen im Playlist-Ordner **STEMS**.
-- **Entfernen** löscht nur die Layer eines Titels.
-- **Platz:** etwa **53 MB pro Minute** Musik auf dem Stick (gemessen: 270 MB für 5:06).
-
-## 3. Einstellungen
-
-![Allgemein und Zusatzpaket](docs/screenshots/settings-1-general.png)
-
-1. **Darstellung:** System, Hell oder Dunkel.
-2. **Sprache:** Deutsch oder English.
-3. **Zusatzpaket:** installiert Demucs zum Trennen (**ca. 0,8 GB** + Modell **ca. 86 MB**), nur nach Bestätigung, **Entfernen** löscht es wieder. Code: MIT, Lizenz der Modellgewichte **nicht eindeutig**, bitte selbst prüfen.
-
-![Einzel-Layer](docs/screenshots/settings-2-single-layers.png)
-
-1. **Einzel-Layer zusätzlich ablegen:** speichert die 4 Layer als WAV zum Anhören (Standard **aus**, nie auf den Stick).
-2. **Zielordner wählen:** wohin die WAV-Dateien kommen.
-
-![Info und Updates](docs/screenshots/settings-3-info.png)
-
-1. **Anleitung auf GitHub:** öffnet diese Seite.
-2. **Beim Start auf Updates prüfen:** Standard **aus**.
-3. **Auf Updates prüfen:** fragt nur **github.com** nach der neuesten Version (auch Betas), lädt nichts.
-4. **Version** der App.
-
-## Am Player
-
-- **Loop Mode 3x:** Layer über **Rampen** steuern.
-- **Loop Mode 2x (Pads):** **in Arbeit**.
-
-## Bekannte Grenzen
-
-- **BETA**, nicht alles auf Hardware erprobt
-- Immer genau **4 Layer** pro Titel
-- Trennen braucht Zusatzpaket, Python 3.10 bis 3.12 und Zeit
-- Windows ungetestet, App nur ad-hoc signiert
-
-## Danke
-
-- **Demucs** und Alexandre Défossez: https://github.com/adefossez/demucs
-- Emulatoren: [CDJ-2000 Emulator](https://github.com/cdj2k-revival/cdj2000-emulator) (cdj2k-revival), [cdj-nxs2-qemu](https://github.com/Stijn-Jacobs/cdj-nxs2-qemu) (Stijn-Jacobs)
-
-## Spende und Kontakt
-
-- StemDock ist kostenlos, die Entwicklung war es nicht (viele bezahlte AI-Tokens): [Spende auf Ko-fi](https://ko-fi.com/cne_dj)
-- Kontakt: http://cne-dj.com · http://cne-lab.de
-
-## Haftung
-
-- Bastelprojekt, **eigene Gefahr**, keine Garantie, kein Support-Versprechen
-- Nur private, nicht-kommerzielle Nutzung
-- Unabhängig, **keine Verbindung** zu Pioneer DJ oder AlphaTheta
-
----
-
-## English
-
-Free helper tool for the **Pioneer CDJ-2000NXS**. **Local only**, nothing is uploaded.
-
-- **BETA, at your own risk:** flashing can **damage** the player. **Keep your original 1.44 file.**
-- **Needs:** Mac with Apple chip, your **own 1.44 file**, **FAT32** stick, rekordbox export; for separating **Python 3.10 to 3.12**.
-- **Install:** not notarized, first start via **right-click > Open > Open**.
-- **Firmware:** FIRMWARE tab > **Original wählen** > **create update file** (`C2KNXSM.UPD`) > copy to the stick (empty or the **rekordbox stick**, always **FAT32**).
-- **Flash:** hold **USB + RELOOP/EXIT** while switching on the CDJ-2000NXS, wait for **"Connect the USB storage device"**, then plug in the stick.
+- **Order:** hold **USB + RELOOP/EXIT** while switching on the CDJ-2000NXS
+- Wait for the message **"Connect the USB storage device"**, **then** plug in the stick
+- Wait, **do not switch off**, power must not be lost
+- **Stick:** empty or the **rekordbox stick**, always **FAT32**; file in the root folder
 - **Back to the original firmware including GUI:** hold **USB STOP + USB + RELOOP/EXIT** while switching on.
-- **Way back:** the mod changes the version from **1.44 to 1.43**, so you can **switch back to the original firmware 1.44 at any time**.
-- **Stems:** PREP tab > choose stick, playlist, tracks > method (**separate** with the add-on or **own layer files**) > write. About **53 MB per minute** on the stick.
-- **Settings:** appearance, language, add-on package (Demucs, about 0.8 GB + 86 MB model), single-layer WAV export (off by default), optional update check (github.com only, off by default).
-- **Player:** **Loop Mode 3x** ramps; **Loop Mode 2x** pads: work in progress.
-- **Thanks:** Demucs / Alexandre Défossez; [CDJ-2000 Emulator](https://github.com/cdj2k-revival/cdj2000-emulator), [cdj-nxs2-qemu](https://github.com/Stijn-Jacobs/cdj-nxs2-qemu). **Donate:** https://ko-fi.com/cne_dj. **Contact:** http://cne-dj.com · http://cne-lab.de
-- **Disclaimer:** hobby project, no warranty, private non-commercial use, not affiliated with Pioneer DJ or AlphaTheta.
+
+**Way back:**
+
+- The mod sets the version number from **1.44 to 1.43**.
+- So you can **switch back to the original firmware 1.44 at any time**: same method, your original file.
+
+## 2. Split tracks into 4 layers (PREP)
+
+![Stems flow](docs/flow-stems.svg)
+
+![Stick and tracks](docs/screenshots/stems-1-stick.png)
+
+1. **Choose stick or export**.
+2. Choose a **playlist**.
+3. Tick **tracks** (already split ones are marked).
+
+![Method](docs/screenshots/stems-2-method.png)
+
+1. **Separate with StemDock**: needs the add-on package (see Settings).
+2. **Use my own layer files**: 4 files per track, StemDock matches and checks them.
+
+![Separate](docs/screenshots/stems-3-separate.png)
+
+1. **Separate**: one track after another, **Cancel** at any time.
+
+![Write](docs/screenshots/stems-4-write.png)
+
+1. **Write to the stick**: music and export stay **unchanged**, `exstem.pdb` is kept as `.bak`.
+
+- Tracks with layers are in the playlist folder **STEMS**.
+- **Remove** deletes only the layers of one track.
+- **Space:** about **53 MB per minute** of music on the stick (measured: 270 MB for 5:06).
+
+## 3. Settings
+
+![General and add-on](docs/screenshots/settings-1-general.png)
+
+1. **Appearance:** System, Light or Dark.
+2. **Language:** Deutsch or English.
+3. **Add-on package:** installs Demucs for separating (**about 0.8 GB** + model **about 86 MB**), only after confirmation, **Remove** deletes it again. Code: MIT, licence of the model weights **not clearly settled**, please check it yourself.
+
+![Single layers](docs/screenshots/settings-2-single-layers.png)
+
+1. **Also save single layers:** saves the 4 layers as WAV for listening (default **off**, never onto the stick).
+2. **Choose target folder:** where the WAV files go.
+
+![Info and updates](docs/screenshots/settings-3-info.png)
+
+1. **Manual on GitHub:** opens this page.
+2. **Check for updates at start:** default **off**.
+3. **Check for updates:** only asks **github.com** for the latest version (betas included), downloads nothing.
+4. **Version** of the app.
+
+## On the player
+
+- **Loop Mode 3x:** control layers via **ramps**.
+- **Loop Mode 2x (pads):** **work in progress**.
+
+## Known limits
+
+- **BETA**, not everything tested on hardware
+- Always exactly **4 layers** per track
+- Separating needs the add-on package, Python 3.10 to 3.12 and time
+- Windows untested, app only ad-hoc signed
+
+## Thanks
+
+- **Demucs** and Alexandre Défossez: https://github.com/adefossez/demucs
+- Emulators: [CDJ-2000 Emulator](https://github.com/cdj2k-revival/cdj2000-emulator) (cdj2k-revival), [cdj-nxs2-qemu](https://github.com/Stijn-Jacobs/cdj-nxs2-qemu) (Stijn-Jacobs)
+
+## Donation and contact
+
+- StemDock is free, its development was not (lots of paid AI tokens): [donate on Ko-fi](https://ko-fi.com/cne_dj)
+- Contact: http://cne-dj.com · http://cne-lab.de
+
+## Disclaimer
+
+- Hobby project, **at your own risk**, no warranty, no promise of support
+- Private, non-commercial use only
+- Independent, **not affiliated** with Pioneer DJ or AlphaTheta
 
 ---
 
