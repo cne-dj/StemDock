@@ -109,7 +109,7 @@ The **?** on every card shows a short help.
 
 ## On the player
 
-- **Loop Mode 3x:** control layers via **ramps**.
+- **Loop Mode 3x:** control layers via **faders**.
 - **Loop Mode 2x (pads):** **work in progress**.
 
 ## Known limits
