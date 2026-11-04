@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 220" width="800" height="220" font-family="Helvetica,Arial,sans-serif" font-size="15">
+<rect width="800" height="220" fill="#fff"/>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10z" fill="#0b0c0e"/></marker></defs>
+<g fill="#fff" stroke="#0b0c0e" stroke-width="2">
+<rect x="20" y="60" width="150" height="90" rx="6"/><rect x="235" y="60" width="150" height="90" rx="6"/>
+<rect x="450" y="60" width="140" height="90" rx="6"/><rect x="655" y="60" width="130" height="90" rx="6"/></g>
+<g fill="#0b0c0e" text-anchor="middle">
+<text x="95" y="100" font-weight="700">USB-Stick</text><text x="95" y="122">rekordbox-Export</text>
+<text x="310" y="100" font-weight="700">StemDock</text><text x="310" y="122">PREP</text><text x="310" y="142" font-size="13">trennt in 4 Layer</text>
+<text x="520" y="100" font-weight="700">Gleicher Stick</text><text x="520" y="122">Titel + Layer</text><text x="520" y="142" font-size="13">Playlist-Ordner STEMS</text>
+<text x="720" y="100" font-weight="700">CDJ-2000NXS</text><text x="720" y="122" font-size="13">Loop Mode 3x</text></g>
+<g stroke="#0b0c0e" stroke-width="2" fill="none" marker-end="url(#a)"><path d="M172,105 H232"/><path d="M387,105 H447"/><path d="M592,105 H652"/></g>
+<g fill="#d7263d"><circle cx="205" cy="45" r="14"/><circle cx="420" cy="45" r="14"/><circle cx="625" cy="45" r="14"/></g>
+<g fill="#fff" font-weight="700" text-anchor="middle"><text x="205" y="51">1</text><text x="420" y="51">2</text><text x="625" y="51">3</text></g>
+<g fill="#0b0c0e" text-anchor="middle" font-size="13"><text x="205" y="180">Stick und Titel wählen</text><text x="420" y="180">Schreiben</text><text x="625" y="180">Stick einstecken</text></g>
+</svg>

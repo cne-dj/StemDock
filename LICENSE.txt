@@ -1,0 +1,13 @@
+StemDock
+
+English
+-------
+© CNE. All rights reserved. StemDock may be used free of charge. Redistribution, sale or publication of modified versions only with permission; please link to the official download page. Third-party components (Demucs, fonts) are subject to their own licences. Pioneer DJ and AlphaTheta are trademarks of their respective owners; no original firmware is included.
+
+Deutsch
+-------
+© CNE. Alle Rechte vorbehalten. StemDock darf kostenlos genutzt werden. Weitergabe, Verkauf oder Veröffentlichung veränderter Fassungen nur mit Zustimmung; bitte verlinke auf die offizielle Download-Seite. Fremde Bestandteile (Demucs, Schriften) unterliegen ihren eigenen Lizenzen. Pioneer DJ und AlphaTheta sind Marken ihrer jeweiligen Inhaber; es wird keine Original-Firmware mitgeliefert.
+
+Third-party components / Fremde Bestandteile: see THIRD-PARTY.md
+
+Homepage / Kontakt: http://cne-dj.com , http://cne-lab.de
