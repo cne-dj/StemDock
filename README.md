@@ -13,7 +13,7 @@ Free helper tool for the **Pioneer CDJ-2000NXS**.
 ## What you need
 
 - **Mac** with Apple chip (Windows untested)
-- Your **original 1.44 file** (`C2KNXS.UPD` or `C2KNXSM.UPD`) from Pioneer
+- Your **complete original file `C2KNXS.UPD`** (Pioneer firmware **1.44**); the mod is then version **1.43+**
 - **FAT32** USB stick
 - **rekordbox** export (folder `PIONEER/rekordbox`)
 - Only for separating: **Python 3.10 to 3.12** and internet (once)
@@ -35,7 +35,7 @@ The **?** on every card shows a short help.
 
 1. **Choose Original**: your 1.44 file.
 2. **Check result**: StemDock rejects wrong or already modified files.
-3. Tick the box, **Create Update File** (about 15 s).
+3. Tick the box, **Create Two Update Files** (about 15 s), choose the target folder.
 
 ![Short help](docs/screenshots/firmware-2-help.png)
 
@@ -44,7 +44,7 @@ The **?** on every card shows a short help.
 
 ![Done](docs/screenshots/firmware-3-done.png)
 
-1. The file is named **`C2KNXSM.UPD`**.
+1. Exactly two files are created: **`C2KNXSM.UPD`** (MAIN) and **`C2KNXSG.UPD`** (display firmware). Put both on the root of the stick, nothing else.
 2. The flashing steps are shown in the app.
 
 **Flashing:**
@@ -109,8 +109,12 @@ The **?** on every card shows a short help.
 
 ## On the player
 
-- **Loop Mode 3x:** control layers via **faders**.
-- **Loop Mode 2x (pads):** **work in progress**.
+- **LOOP MODE 1x:** loop mode with pads. With **PAD MODE on**, the selector picks the pad mode **AUTO LOOP** (normal loop) / **JUMP / HOT CUE / SLICER**; push selects. The **title bar** shows the mode, coloured pad blocks are shown at the bottom.
+- **LOOP MODE 2x** (stem track, STEM MODE on): **stem mode**. The selector picks Vocal / Melody / Bass / Drums / Reset all; push mutes/unmutes or resets. The **title bar** shows the V/M/B/D values (e.g. `V100 M80 B100 D40`), faders are shown at the bottom.
+- **3rd press:** back to the normal view.
+- **INFO** shows the list on these pages (pad modes or stems); push in INFO works the same.
+- **BACK** opens Browse as usual. The selector zooms only on the normal view.
+- **UTILITY:** WAVEFORM COLOR, **PAD MODE** (default OFF), **STEM MODE** (default ON, takes effect after restart; OFF = pure CDJ, no stem database).
 
 ## Known limits
 
