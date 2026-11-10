@@ -1,6 +1,6 @@
 <img src="docs/logo.svg" alt="CNE" width="56" align="right">
 
-# StemDock 0.11 (BETA)
+# StemDock 0.9 (BETA)
 
 Free helper tool for the **Pioneer CDJ-2000NXS**.
 
@@ -141,4 +141,4 @@ The **?** on every card shows a short help.
 
 ---
 
-[LICENSE.txt](LICENSE.txt) · [THIRD-PARTY.md](THIRD-PARTY.md) · [CHANGELOG.md](CHANGELOG.md)
+[FAQ.md](FAQ.md) · [LICENSE.txt](LICENSE.txt) · [THIRD-PARTY.md](THIRD-PARTY.md) · [CHANGELOG.md](CHANGELOG.md)
